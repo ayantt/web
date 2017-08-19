@@ -1,0 +1,25 @@
+<html>
+
+   <head>
+      <title>JavaScript Internal Script</title>
+      
+      
+      <script type = "text/JavaScript">
+         	function patternChecker() {
+			var data = document.getElementById('data').value ;
+			var pattern = document.getElementById('pattern').value ;
+			var patt = new RegExp(pattern);
+			var res = patt.test(data);
+			if(res==true){
+				document.write("Pattern Matched");
+			}else document.write("Pattern No Matched");
+            }						
+      </script>
+   </head>
+   <body>   
+	<input type= "text" id = "data" name = "data"/><br />
+	<input type= "text" id = "pattern" name = "pattern"/><br />
+	<input type = "button" onclick = "patternChecker();" value = "Check Button" /> <br />	
+   </body>
+
+</html>
